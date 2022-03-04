@@ -1,7 +1,16 @@
 :root {
+  --white: #fff;
+  --black: #000;
   --background-color: #edf0f8;
   --accent-color: #ff3e00;
+  --accent-hover: #ffe1d6;
   --text-color: #444444;
+  --muted-color: #616161;
+
+  --border-color: #999999;
+  --disabled-color: var(--background-color);
+
+  --elevation-shadow: 0 0 2px var(--black);
 }
 
 /* Fix height */

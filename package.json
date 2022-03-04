@@ -19,6 +19,7 @@
     "@commitlint/config-conventional": "^16.2.1",
     "@sveltejs/adapter-static": "^1.0.0-next.28",
     "@sveltejs/kit": "next",
+    "@types/leaflet": "^1.7.9",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
     "eslint": "^7.32.0",
@@ -37,5 +38,7 @@
     "tslib": "^2.3.1",
     "typescript": "~4.5.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "leaflet": "^1.7.1"
+  }
 }
