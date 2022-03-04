@@ -1,9 +1,5 @@
 /// <reference types="@sveltejs/kit" />
 
-interface ImportMetaEnv {
-  VITE_DEFAULT_MAP_CENTER: string
-}
-
 type LatLng = [number, number]
 interface GeometryBounds {
   min: LatLng
