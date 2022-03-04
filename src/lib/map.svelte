@@ -73,16 +73,19 @@
    * Add market to the map
    * @param market The market data
    */
-  export function addMarket(market: Market): null | L.Marker {
-    if (!leaflet) return null
+  export function addMarket(market: Market): null | (L.Marker & { id: string }) {
+    if (!leaflet || !map) return null
 
     const marker = leaflet.marker(market.coordinates, {
       riseOnHover: true,
       title: market.title,
       alt: market.title
     })
-    let popupComponent: SvelteComponent
+    // Set it to marker
+    ;(marker as any).id = market.id
 
+    // Attach component to popup
+    let popupComponent: SvelteComponent
     marker.bindPopup(() => {
       let container = leaflet.DomUtil.create('div')
       popupComponent = new MapPopup({
@@ -108,7 +111,7 @@
         }
       })
 
-    return marker.addTo(map)
+    return marker.addTo(map) as L.Marker & { id: string }
   }
 
   /**

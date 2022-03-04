@@ -1,5 +1,4 @@
 /// <reference types="@sveltejs/kit" />
-
 type LatLng = [number, number]
 interface GeometryBounds {
   min: LatLng
@@ -15,6 +14,7 @@ interface City {
 }
 
 interface Market {
+  id: string
   title: string
   coordinates: LatLng
   address: string

@@ -7,31 +7,31 @@
 
 <script lang="ts">
   import { browser } from '$app/env'
-  import getMarkets from '$lib/data'
+  import getMarkets from '$lib/markets'
   import Map from '$lib/map.svelte'
   import Search from '$lib/search.svelte'
   import { coordsToUrl, replaceParams } from '$lib/url'
   import type { Marker } from 'leaflet'
 
   const zoom = 15
-  const minMarkerZoom = 13
+  const minMarkerZoom = 10
+  const maxMarkers = 100
 
   let map: Map
-  const noop = (..._: any[]) => null
-
-  let center: [number, number] = [0, 0]
   let search = ''
-  let markers: Marker[] = []
+  let center: [number, number] = [0, 0]
+  let markers: (Marker & { id: string })[] = []
 
   // Load data
   if (browser && 'URLSearchParams' in window) {
     const urlParams = new URLSearchParams(window.location.search)
 
+    // Retrieve search
+    search = decodeURIComponent(urlParams.get('search') ?? '')
+
     // Retrieve coords
     const matches = latlngRegex.exec(urlParams.get('pos'))
     if (matches) center = [Number(matches[1]), Number(matches[2])]
-
-    search = decodeURIComponent(urlParams.get('search') ?? '')
   }
 
   /**
@@ -94,9 +94,13 @@
    * @param reset Force create all markers
    */
   function refreshMarkets(bounds: GeometryBounds, reset = false) {
+    if (!map) {
+      return
+    }
+
     if (reset || markers.length === 0) {
-      markers = getMarkets(bounds, [])
-        .map(map?.addMarket ?? noop)
+      markers = getMarkets(bounds, [], maxMarkers)
+        .map(map.addMarket)
         .filter((item) => {
           return item !== null
         })
@@ -112,25 +116,20 @@
         })
       ]
 
+      // Add new markers
       markers = [
         ...markers,
-        ...getMarkets(bounds, markers.map(toLatLng))
-          .map(map?.addMarket ?? noop)
+        ...getMarkets(
+          bounds,
+          markers.map((item) => item.id),
+          maxMarkers
+        )
+          .map(map.addMarket)
           .filter((item) => {
             return item !== null
           })
       ]
     }
-  }
-
-  /**
-   * Convert market coordinates to [lat, lng]
-   * @param marker The marker want converted
-   * @returns The coordinates ([lat, lng]) of marker
-   */
-  function toLatLng(marker: L.Marker): [number, number] {
-    const latLng = marker.getLatLng()
-    return [latLng.lat, latLng.lng]
   }
 </script>
 
