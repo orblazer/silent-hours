@@ -10,7 +10,7 @@
     {data.city}
   </p>
 
-  <h3>Silent hours :</h3>
+  <h3>Heures silencieuse :</h3>
   <ul>
     {#each Object.entries(data.hours) as [day, hours] (day)}
       <li><strong>{day}</strong> : {hours}</li>
