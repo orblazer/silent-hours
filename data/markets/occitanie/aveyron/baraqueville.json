@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Carrefour Market",
+    "coordinates": [44.286974162415824, 2.4484593197442512],
+    "address": "600 Av. de Rodez",
+    "postalCode": 12160,
+    "city": "Baraqueville",
+    "hours": {
+      "lundi": "14-15h"
+    }
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Carrefour Market",
+    "coordinates": [43.95894327007984, 2.869679344473304],
+    "address": "Vaxergues le Bas",
+    "postalCode": 12400,
+    "city": "Saint-Affrique",
+    "hours": {
+      "lundi": "14-15h"
+    }
+  }
+]

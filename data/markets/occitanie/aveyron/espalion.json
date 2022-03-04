@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Carrefour Express",
+    "coordinates": [44.52051584689887, 2.7627557516503223],
+    "address": "Pl. Saint-Georges",
+    "postalCode": 12500,
+    "city": "Espalion",
+    "hours": {
+      "lundi": "14-15h"
+    }
+  }
+]

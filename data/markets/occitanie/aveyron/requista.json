@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Carrefour Market",
+    "coordinates": [44.0375985819169, 2.5227197229833607],
+    "address": "80 Av. d'Albi",
+    "postalCode": 12170,
+    "city": "Requista",
+    "hours": {
+      "lundi": "14-15h"
+    }
+  },
+  {
+    "title": "Carrefour Contact",
+    "coordinates": [44.03084179595592, 2.535916191454728],
+    "address": "7 Pl. Cardinal Verdier",
+    "postalCode": 12170,
+    "city": "Requista",
+    "hours": {
+      "lundi": "14-15h"
+    }
+  }
+]

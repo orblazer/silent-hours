@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Carrefour",
+    "coordinates": [44.36131292335287, 2.0341881030834115],
+    "address": "Av. de Toulouse",
+    "postalCode": 12200,
+    "city": "Villefranche-de-Rouergue",
+    "hours": {
+      "lundi": "14-15h"
+    }
+  },
+  {
+    "title": "Carrefour City",
+    "coordinates": [44.355399271251656, 2.034062977986864],
+    "address": "5 Pl. Jean Jaurès",
+    "postalCode": 12200,
+    "city": "Villefranche-de-Rouergue",
+    "hours": {
+      "lundi": "14-15h"
+    }
+  }
+]

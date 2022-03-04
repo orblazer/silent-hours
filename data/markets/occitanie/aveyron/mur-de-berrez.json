@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Carrefour Contact",
+    "coordinates": [44.8422368397863, 2.6614150696269907],
+    "address": "9 Av. du Cardinal Verdier",
+    "postalCode": 12600,
+    "city": "Mur-de-Barrez",
+    "hours": {
+      "lundi": "14-15h"
+    }
+  }
+]

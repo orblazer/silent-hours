@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Carrefour Contact",
+    "coordinates": [44.377338955799146, 2.5629744937328156],
+    "address": "4 Bd du 122 Régiment d'Infanterie",
+    "postalCode": 12000,
+    "city": "Rodez",
+    "hours": {
+      "lundi": "14-15h"
+    }
+  },
+  {
+    "title": "Carrefour City",
+    "coordinates": [44.3604968006139, 2.5756994977547425],
+    "address": "2 Rue Corbières",
+    "postalCode": 12000,
+    "city": "Rodez",
+    "hours": {
+      "lundi": "14-15h"
+    }
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Carrefour Market",
+    "coordinates": [44.094321243177184, 3.077032358226321],
+    "address": "Av. du Pont Lerouge",
+    "postalCode": 12100,
+    "city": "Millau",
+    "hours": {
+      "lundi": "14-15h"
+    }
+  },
+  {
+    "title": "Carrefour City",
+    "coordinates": [44.100058157132715, 3.078124997231996],
+    "address": "3 Pl. du Mandarous",
+    "postalCode": 12100,
+    "city": "Millau",
+    "hours": {
+      "lundi": "14-15h"
+    }
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Carrefour Contact",
+    "coordinates": [44.45494027417776, 2.0309471650011517],
+    "address": "avenue Du Rouergue, RD 922",
+    "postalCode": 12260,
+    "city": "Villeneuve",
+    "hours": {
+      "lundi": "14-15h"
+    }
+  }
+]

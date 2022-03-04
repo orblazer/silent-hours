@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Carrefour Market",
+    "coordinates": [44.30974101588446, 2.561017938753532],
+    "address": "Av. de Rodez",
+    "postalCode": 12450,
+    "city": "Luc-la-Primaube",
+    "hours": {
+      "lundi": "14-15h"
+    }
+  }
+]

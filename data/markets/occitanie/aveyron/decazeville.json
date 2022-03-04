@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Carrefour Contact",
+    "coordinates": [44.59103704478428, 2.2479271474116675],
+    "address": "45 Rue Gambetta",
+    "postalCode": 12300,
+    "city": "Decazeville",
+    "hours": {
+      "lundi": "14-15h"
+    }
+  }
+]
