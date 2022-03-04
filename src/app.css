@@ -1,13 +1,13 @@
 :root {
-  --white: #fff;
+  --white: #F8FAFC;
   --black: #000;
-  --background-color: #edf0f8;
-  --accent-color: #ff3e00;
-  --accent-hover: #ffe1d6;
-  --text-color: #444444;
-  --muted-color: #616161;
+  --background-color: #E2E8F0;
+  --accent-color: #4F46E5;
+  --accent-hover: #EEF2FF;
+  --text-color: #111827;
+  --muted-color: #4B5563;
 
-  --border-color: #999999;
+  --border-color: #CBD5E1;
   --disabled-color: var(--background-color);
 
   --elevation-shadow: 0 0 2px var(--black);
