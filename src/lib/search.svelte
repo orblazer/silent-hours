@@ -1,5 +1,6 @@
 <script lang="ts">
   import { createEventDispatcher, onMount } from 'svelte'
+  import clickOutside from './directives/clickOutside'
   import { search } from './search-api'
   import { coordsToUrl, replaceParams } from './url'
 
@@ -142,6 +143,7 @@
   aria-labelledby="search"
   on:submit|preventDefault
   class={$$props.class}
+  use:clickOutside={() => (showResults = false)}
 >
   <div class="search-field" class:has-results={showResults} on:click={handleSearchClick}>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
