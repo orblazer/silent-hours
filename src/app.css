@@ -1,14 +1,15 @@
 :root {
-  --white: #F8FAFC;
+  --white: #f8fafc;
   --black: #000;
-  --background-color: #E2E8F0;
-  --accent-color: #4F46E5;
-  --accent-hover: #EEF2FF;
+  --background-color: #e2e8f0;
+  --accent-color: #4f46e5;
+  --accent-hover: #eef2ff;
   --text-color: #111827;
-  --muted-color: #4B5563;
+  --muted-color: #4b5563;
 
-  --border-color: #CBD5E1;
+  --border-color: #cbd5e1;
   --disabled-color: var(--background-color);
+  --selection: #c7d2fe;
 
   --elevation-shadow: 0 0 2px var(--black);
 }
@@ -37,6 +38,12 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+/* Highlight */
+::selection {
+  background-color: var(--selection);
+  color: var(--black);
 }
 
 /* Element styles */
